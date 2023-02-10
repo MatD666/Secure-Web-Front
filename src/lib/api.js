@@ -24,7 +24,6 @@ async function send({ method, path, data, token }) {
 }
 
 export function get(path, token) {
-	console.log("d");
 	return send({ method: 'GET', path, token });
 }
 
