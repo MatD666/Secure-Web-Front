@@ -20,7 +20,7 @@ export const actions = {
 			return fail(401, body);
 		}
 
-		cookies.set('jwt', body.token, { path: '/' });
+		cookies.set('jwt', body.jwt, { path: '/' });
 
 		throw redirect(307, '/');
 	}
