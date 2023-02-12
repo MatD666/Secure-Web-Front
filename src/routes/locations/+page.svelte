@@ -23,6 +23,7 @@
         let filmsPerPage = 10;
 
         currentPage = newPage;
+        console.log(data.user)
         films = await api.get(`locations?offset=${newPage * filmsPerPage}&limit=${filmsPerPage}`, data.user);
     }
 </script>
